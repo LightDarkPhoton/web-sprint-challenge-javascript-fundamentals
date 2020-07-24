@@ -27,13 +27,30 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+`.forEach` loops over every item in an array and cannot be stopped by traditional methods. It's inefficient for very large data sets where you may want to occasionally "skip" items, but otherwise, it's good in most cases where that isn't the case.
+
+`.map` loops over every item in an array and applies a "transformation" to each item, depending on the values you want back. It's useful for changing data, like say multiplying everything inside an array by 2. 
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback is a function that's going to be called later at some point by another function.
+
+A higher order function takes another function as one of its arguments or returns a function.
 
 3. What is closure?
 
+A closure is basically a function and the local environment it encompasses. By "local environment", I refer to any variables the function will use that were defined "above" its scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+1. If you're in the global scope, `this` will refer to global objects. Specifically something called a global window object.
+ 2. If you're calling a function, `this` will refer to the object called (the reference before the dot).
+ 3. You can create new instances of an object and refer to those instances when creating them inside a constructor function with `this`.
+ 4. When you use the call method, `this` is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+In order to inherit the properties and methods of the parent class, one must use `super()` when extending a child class. That's all.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
